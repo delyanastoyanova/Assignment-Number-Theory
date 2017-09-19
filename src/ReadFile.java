@@ -17,20 +17,32 @@ public class ReadFile {
         //file reader contains the name of the file to be opened
         FileReader file = new FileReader(location_file);
         //Buffer reader stores all characters from the file
-        BufferedReader reader=new BufferedReader(file);
-        ArrayList<String> data=new ArrayList<>();
-        String current ="";
+        BufferedReader reader = new BufferedReader(file);
+        ArrayList<String> data = new ArrayList<>();
+        String current = "";
         // while loop append each line of text to the arraylist
-        while ((current=reader.readLine()) != null) {
+        while ((current = reader.readLine()) != null) {
             data.add(current);
         }
         reader.close();
         return data;
     }
-    int getRadix()throws IOException{
-        int radix=0;
 
-       return radix;
+    int getRadix() throws IOException {
+        int radix = 0;
+        //file reader contains the name of the file to be opened
+        FileReader file = new FileReader(location_file);
+        //Buffer reader stores all characters from the file
+        BufferedReader reader = new BufferedReader(file);
+        ArrayList<String> data = new ArrayList<>();
+        String current = "";
+        // while loop append each line of text to the arraylist
+        while ((current = reader.readLine()) != null) {
+            data.add(current);
+        }
+
+        reader.close();
+        return radix;
     }
 
 }
